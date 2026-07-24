@@ -1,0 +1,31 @@
+body {
+  background: #0b0d12;
+  color: #e7e9ee;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+textarea {
+  width: 100%;
+  min-height: 150px;
+  background: #171b24;
+  color: #e7e9ee;
+  border: 1px solid #252a35;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 16px 0;
+}
+button {
+  background: #7c9cff;
+  color: #0b0d12;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
