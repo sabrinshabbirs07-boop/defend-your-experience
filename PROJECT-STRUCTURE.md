@@ -1,11 +1,13 @@
 # PROJECT-STRUCTURE.md — Defend Your Experience
 
+> **Day 3 update:** Foundation/scaffolding (originally planned for Day 2) was actually completed on Day 3 — see DAY3-SUMMARY.md. `server.js`, `routes/test.js`, and the frontend shell now exist and are confirmed working. AI provider is **Groq**, not Claude (see ARCHITECTURE.md/ENVIRONMENT.md).
+
 ```
 defend-your-experience/
   backend/
     routes/
-      test.js              (Day 2 — scaffolding, can be removed by Day 10)
-      extractClaims.js      (Day 3 — POST /api/extract-claims)
+      test.js              (Day 3 — built and working, GET /api/test via Groq; can be removed by Day 10)
+      extractClaims.js      (Day 4 — POST /api/extract-claims)
       interviewTurn.js       (Day 4 — POST /api/interview-turn)
       scoreAnswer.js         (Day 5 — POST /api/score-answer)
       generateReport.js      (Day 6 — POST /api/generate-report)
@@ -19,9 +21,9 @@ defend-your-experience/
     .env.example             (documents required vars, no real keys — Day 10)
     package.json
   frontend/
-    index.html               (single SPA shell, all screens as sections/views)
-    styles.css                (global design system — polished in Day 8)
-    app.js                    (screen routing, shared state)
+    index.html               (Day 3 — built; onboarding shell live, other screens added as sections/views over Days 4-6)
+    styles.css                (Day 3 — basic dark theme in place; polished in Day 8)
+    app.js                    (Day 3 — backend connection check + textarea validation live; screen routing/shared state grows Day 4+)
     chat.js                   (Day 4 — chat UI logic)
     chatUI.css                 (Day 4 — chat-specific styles)
     scoring.js                 (Day 5 — fire-and-forget scoring calls)
